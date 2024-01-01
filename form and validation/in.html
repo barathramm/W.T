@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="ff.css">
+    <script src="data.js"></script>   
+</head>
+<body>
+    <form action="dta1.php" method="post">
+<div class="container">
+    <h2><u>REGISTERATION FORM</u></h2>
+    
+    <div class="form">
+            <label for="name">NAME:</label>
+
+  <input type="text" id="name" name="name" oninput="convertToUppercase(this)" >
+        </div>
+
+    <div class="form">
+        <label for="DOB"> Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required>
+    </div>
+        
+    <div class="form">
+            <label for="reg_id">REG NO:</label>
+            <input type="number" id="reg_id" name="reg_id" required>
+        </div>
+        
+    <div class="form">
+            <label for="phoneno">PHONE NO:</label>
+            <input type="number" id="phoneno" name="phoneno" placeholder="Enter 10 digit number" oninput="phone(this)">
+        </div>
+        
+    <div class="form">
+            <label for="email">EMAIL :</label>
+            <input type="email" id="email" name="email" oninput="email(this)">
+        </div>
+       
+    <div class="form">
+            <label for="photo">UPLODE PHOTO:</label>
+            <input type="file" name="photo" id="photo"  required><br>            
+        </div>
+    
+
+        <button type="submit" class="button">Submit</button>
+    
+</div>
+
+<script src = "fff.js"></script>
+</form>
+</body>
+</html>

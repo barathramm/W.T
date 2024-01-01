@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid rgb(8, 8, 8);
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1><u>Table </u></h1>
+  <div>
+    <table>
+      <tr>
+        <th>Country</th>
+        <th colspan="2">Population (in crores)</th>
+      </tr>
+      <tr>
+        <td rowspan="3">INDIA</td>
+        <td>1998</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>100</td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">USA</td>
+        <td>1998</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>40</td>
+      </tr>
+
+
+      <tr>
+        <td rowspan="3">UK</td>
+        <td>1998</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>35</td>
+      </tr>
+      <!-- Repeat the same structure for USA and UK -->
+
+    </table>
+  </div>
+</body>
+</html>
